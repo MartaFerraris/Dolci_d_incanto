@@ -1,6 +1,7 @@
 import React from 'react'
+import './Carousel.css'
 
-const Navbar = () => {
+const Carousel = () => {
   return (
     <section>
         
@@ -8,4 +9,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Carousel

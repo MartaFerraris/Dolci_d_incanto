@@ -1,6 +1,7 @@
 import React from 'react'
+import './Layout.css'
 
-const Footer = () => {
+const Layout = () => {
   return (
     <section>
         
@@ -8,4 +9,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default Layout

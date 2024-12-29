@@ -1,0 +1,76 @@
+* {
+    font-family: var(--font-primary);
+}
+
+.nav-section {
+    height: 5rem;
+    width: auto;
+    background-color: var(--dark-chocolate);
+}
+
+.nav-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-logo-img {
+    padding-left: 2rem;
+    height: 4rem;
+    width: auto;
+}
+
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    gap: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--latte);
+}
+
+.nav-dropdown-p {
+    border: none;
+    cursor: pointer;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+    color: var(--latte);
+    cursor: pointer;
+}
+
+.nav-dropdown-a {
+    display: none;
+    position: absolute;
+    min-width: 7rem;
+    background-color: var(--dark-chocolate);
+    z-index: 1;
+}
+
+.nav-dropdown-a a {
+    padding: 2rem 3rem;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-contacts {
+    justify-content: start;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.nav-contacts img {
+    height: 2.5rem;
+    width: auto;
+}
