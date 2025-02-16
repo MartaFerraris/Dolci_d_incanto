@@ -1,41 +1,36 @@
 import React, { useState } from 'react'
 import './Navbar.css'
-import logo from '../../assets/svg/logo-dolci-d-incanto.svg'
-import call from '../../assets/svg/call.svg'
 
 const Navbar = () => {
 
-  const [isVisible, setIsVisible] = useState(false);
-
-  // const toggleDropdown = (value) => {
-  //   setIsVisible(value);
-  // }
+  // {/* Collegare successivamente le rispettive pages */ }
 
   return (
     <section className='nav-section'>
       <div className='nav-grid'>
         <div className='nav-logo'>
-          <img className='nav-logo-img' src={logo} alt="Dolci d'Incanto" />
+          {/* <img className='nav-logo-img' src={logo} alt="Dolci d'Incanto" /> */}
         </div>
         <div className='nav-link'>
-          {/* Collegare successivamente le rispettive pages */}
           <div>Home</div>
-          <div>Chi Siamo</div>
-          {/* Dropdown */}
+          {/* Dropdown "Chi siamo"*/}
+          <div className='nav-dropdown'>
+            <div className='nav-dropdown-div'>Chi Siamo</div>
+            <div className='nav-dropdown-about-us'>
+              <div>Dove siamo</div>
+            </div>
+          </div>
+          {/* Dropdown "Pasticceria"*/}
           <div className='nav-dropdown'>
             <div className='nav-dropdown-div'>Pasticceria</div>
-            <div className='nav-dropdown-menu'>
-              <div>Tradizionale</div>
+            <div className='nav-dropdown-past'>
+              <div>Dolce</div>
+              <div>Salati</div>
               <div>Eventi speciali</div>
             </div>
           </div>
           <div>Gelateria</div>
           <div>Preventivo</div>
-        </div>
-        <div className='nav-contacts'>
-          <div>
-            <img src={call} alt="" />
-          </div>
         </div>
       </div>
     </section>
