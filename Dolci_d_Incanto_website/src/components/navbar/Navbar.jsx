@@ -7,9 +7,9 @@ const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(false);
 
-  const dropdownVisible = () => {
-    setIsVisible((prevState) => !prevState)
-  }
+  // const toggleDropdown = (value) => {
+  //   setIsVisible(value);
+  // }
 
   return (
     <section className='nav-section'>
@@ -19,23 +19,23 @@ const Navbar = () => {
         </div>
         <div className='nav-link'>
           {/* Collegare successivamente le rispettive pages */}
-          <a href="#">Home</a>
-          <a href="#">Chi Siamo</a>
-          {/* dropdown */}
+          <div>Home</div>
+          <div>Chi Siamo</div>
+          {/* Dropdown */}
           <div className='nav-dropdown'>
-            <p className='nav-dropdown-p' onClick={dropdownVisible}>Pasticceria</p>
-            {isVisible && <div className='.nav-dropdown-a'>
-            <a href="#">Tradizionale</a>
-            <a href="#">Eventi speciali</a>
-            </div>}
+            <div className='nav-dropdown-div'>Pasticceria</div>
+            <div className='nav-dropdown-menu'>
+              <div>Tradizionale</div>
+              <div>Eventi speciali</div>
+            </div>
           </div>
-          <a href="#">Gelateria</a>
-          <a href="#">Preventivo</a>
+          <div>Gelateria</div>
+          <div>Preventivo</div>
         </div>
         <div className='nav-contacts'>
-          <a href="#">
+          <div>
             <img src={call} alt="" />
-          </a>
+          </div>
         </div>
       </div>
     </section>

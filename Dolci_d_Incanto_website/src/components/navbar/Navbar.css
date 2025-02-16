@@ -33,13 +33,10 @@
     gap: 3rem;
 }
 
-a {
+.nav-link div {
+    padding: 0.5rem;
     text-decoration: none;
     color: var(--latte);
-}
-
-.nav-dropdown-p {
-    border: none;
     cursor: pointer;
 }
 
@@ -50,18 +47,29 @@ a {
     cursor: pointer;
 }
 
-.nav-dropdown-a {
+.nav-dropdown-menu {
     display: none;
     position: absolute;
-    min-width: 7rem;
+    left: 0;
     background-color: var(--dark-chocolate);
+    width: 10rem;
     z-index: 1;
 }
 
-.nav-dropdown-a a {
-    padding: 2rem 3rem;
+/* Mostra il menu quando il mouse è sopra la dropdown */
+.nav-dropdown:hover .nav-dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0.5rem;
+    gap: 0.5rem;
+}
+
+.nav-dropdown-menu div {
+    padding: 0.5rem;
+    color: var(--latte);
     text-decoration: none;
-    display: block;
+    cursor: pointer;
 }
 
 .nav-contacts {
