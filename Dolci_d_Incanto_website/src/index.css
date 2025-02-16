@@ -1,6 +1,5 @@
+@import "https://unpkg.com/open-props";
 *{
   margin: 0;
   padding: 0;
 }
-
-@import "https://unpkg.com/open-props";
