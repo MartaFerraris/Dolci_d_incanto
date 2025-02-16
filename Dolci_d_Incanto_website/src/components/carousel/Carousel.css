@@ -1,0 +1,16 @@
+.carousel-box {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+}
+
+.carousel-img {
+    height: inherit;
+    min-width: 100%;
+    box-sizing: border-box;
+}
